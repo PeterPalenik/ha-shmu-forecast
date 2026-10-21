@@ -9,8 +9,9 @@ third-party relay, API key, geocoding service or GRIB decoder is used.
 Python **3.14**. The public repository is
 [`PeterPalenik/ha-shmu-forecast`](https://github.com/PeterPalenik/ha-shmu-forecast).
 GitHub Actions tests and hassfest have passed. HACS custom-repository installation
-and default-store admission have not been verified. The included `brand/icon.png`
-is original, unofficial project artwork; it is not the SHMÚ logo and does not
+and default-store admission have not been verified. The integration-local
+`custom_components/shmu_forecast/brand/icon.png` is original, unofficial project
+artwork; it is not the SHMÚ logo and does not
 imply SHMÚ or Home Assistant endorsement.
 
 ## Installation
@@ -30,9 +31,10 @@ imply SHMÚ or Home Assistant endorsement.
 
 Add the public repository URL in HACS **Custom repositories**, category
 **Integration**, download SHMU Forecast, restart Home Assistant and follow steps
-3–4 above. The repository includes the `brand/icon.png` asset requested by the
-HACS integration publishing guide. This is **not a claim that remote HACS
-installation has passed**, nor that the integration is in the default store.
+3–4 above. The repository includes the `custom_components/shmu_forecast/brand/icon.png`
+asset used by Home Assistant's custom integration brand path. HACS's publication
+check also requires valid repository topics; this is **not a claim that remote
+HACS installation has passed**, nor that the integration is in the default store.
 
 ## Configuration and model comparison
 
