@@ -6,10 +6,12 @@ operated by SHMÚ. Forecast data are fetched directly from **www.shmu.sk**; no
 third-party relay, API key, geocoding service or GRIB decoder is used.
 
 **Status:** version 0.1.1, tested locally with Home Assistant **2026.10.2** and
-Python **3.14**. The intended repository identity is
-`PeterPalenik/ha-shmu-forecast`. Remote publication, remote CI, HACS installation
-and default-store admission have **not** been verified. Metadata links name
-that intended repository and may not resolve until it is published.
+Python **3.14**. The public repository is
+[`PeterPalenik/ha-shmu-forecast`](https://github.com/PeterPalenik/ha-shmu-forecast).
+GitHub Actions tests and hassfest have passed. HACS custom-repository installation
+and default-store admission have not been verified. The included `brand/icon.png`
+is original, unofficial project artwork; it is not the SHMÚ logo and does not
+imply SHMÚ or Home Assistant endorsement.
 
 ## Installation
 
@@ -24,15 +26,13 @@ that intended repository and may not resolve until it is published.
 4. Choose a location, model and maximum run age, then submit. A valid future
    forecast for that exact pair must be available before the entry is created.
 
-### HACS custom repository (after authorized public publication)
+### HACS custom repository
 
-Once the intended repository actually exists publicly, add its GitHub URL in
-HACS **Custom repositories**, category **Integration**, download SHMU Forecast,
-restart Home Assistant and follow steps 3–4 above. The repository layout and
-metadata are prepared for this path; this is **not a claim that remote HACS
+Add the public repository URL in HACS **Custom repositories**, category
+**Integration**, download SHMU Forecast, restart Home Assistant and follow steps
+3–4 above. The repository includes the `brand/icon.png` asset requested by the
+HACS integration publishing guide. This is **not a claim that remote HACS
 installation has passed**, nor that the integration is in the default store.
-Public repository metadata, the applicable HACS checklist and a
-`home-assistant/brands` entry still require publication-stage verification.
 
 ## Configuration and model comparison
 
@@ -160,10 +160,10 @@ controlled. No fake Home Assistant classes or live household services are
 used. Upstream HA/backoff deprecation warnings may be emitted under Python
 3.14; they are not suppressed to hide failures.
 
-GitHub CI is prepared for pinned-runtime pytest and hassfest, but has not run
-remotely. The manual workflow-dispatch HACS publication check deliberately
-requires a real public repository and brands entry; it is not replaced with
-an ignored/masked success. No local Ruff validation is claimed.
+GitHub Actions `Validate` run 39591158028 passed pinned-runtime pytest and
+hassfest on the published snapshot. Its HACS publication-check job was skipped
+because that job runs only on manual dispatch. No HACS publication-check result
+or local Ruff validation is claimed.
 
 ## Source contract and attribution
 
