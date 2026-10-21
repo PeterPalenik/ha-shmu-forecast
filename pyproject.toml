@@ -1,0 +1,17 @@
+[project]
+name = "ha-shmu-forecast"
+version = "0.1.1"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["homeassistant==2026.10.2", "pytest==8.4.2"]
+
+# Environment metadata only: HA installs the component directory, not a Python
+# namespace package. Editable namespace hooks are not filesystem paths HA can scan.
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,1 @@
+"""SHMU Forecast tests."""

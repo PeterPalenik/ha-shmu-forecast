@@ -1,0 +1,49 @@
+{
+  "title": "SHMU Forecast",
+  "config": {
+    "step": {
+      "user": {
+        "title": "SHMÚ Predpoveď",
+        "description": "Vyberte lokalitu a predpovedový model. Údaje sú modelová predpoveď, nie meranie. Najbližšia lokalita je upraviteľná predvoľba. Maximálny vek behu je vaše pravidlo čerstvosti, nie záruka času publikovania SHMÚ.",
+        "data": {
+          "station_id": "Lokalita predpovede",
+          "model": "Predpovedový model",
+          "max_run_age_hours": "Maximálny vek behu modelu (hodiny, 1–168)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Údaje SHMÚ sa nepodarilo načítať. Skontrolujte pripojenie a skúste znova.",
+      "no_forecast": "Pre zvolenú lokalitu a model momentálne nie je dostupná platná predpoveď. Skúste neskôr alebo vyberte inú kombináciu.",
+      "invalid_selection": "Vyberte lokalitu a model zo zoznamu a maximálny vek behu ako celé číslo od 1 do 168 hodín.",
+      "already_configured": "Táto kombinácia lokality a modelu už je nakonfigurovaná."
+    },
+    "abort": {
+      "cannot_connect": "Zoznam lokalít SHMÚ sa nepodarilo načítať. Skúste neskôr.",
+      "already_configured": "Táto kombinácia lokality a modelu už je nakonfigurovaná."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Možnosti SHMÚ Predpovede",
+        "description": "Vyberte lokalitu a predpovedový model. Údaje sú modelová predpoveď, nie meranie. Zmeny sa overia pred uložením. Ak po uložení zlyhá načítanie, nová predpoveď bude nedostupná; pôvodný model sa neobnoví.",
+        "data": {
+          "station_id": "Lokalita predpovede",
+          "model": "Predpovedový model",
+          "max_run_age_hours": "Maximálny vek behu modelu (hodiny, 1–168)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Údaje SHMÚ sa nepodarilo načítať. Skontrolujte pripojenie a skúste znova.",
+      "no_forecast": "Pre zvolenú lokalitu a model momentálne nie je dostupná platná predpoveď. Skúste neskôr alebo vyberte inú kombináciu.",
+      "invalid_selection": "Vyberte lokalitu a model zo zoznamu a maximálny vek behu ako celé číslo od 1 do 168 hodín.",
+      "already_configured": "Táto kombinácia lokality a modelu už je nakonfigurovaná."
+    },
+    "abort": {
+      "cannot_connect": "Zoznam lokalít SHMÚ sa nepodarilo načítať. Skúste neskôr.",
+      "already_configured": "Táto kombinácia lokality a modelu už je nakonfigurovaná."
+    }
+  }
+}

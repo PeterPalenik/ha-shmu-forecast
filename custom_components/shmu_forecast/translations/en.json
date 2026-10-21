@@ -1,0 +1,49 @@
+{
+  "title": "SHMU Forecast",
+  "config": {
+    "step": {
+      "user": {
+        "title": "SHMU Forecast",
+        "description": "Select a location and forecast model. Values are model forecasts, not observations. The nearest location is an editable default. Maximum run age is your freshness policy, not a SHMU publication guarantee.",
+        "data": {
+          "station_id": "Forecast location",
+          "model": "Forecast model",
+          "max_run_age_hours": "Maximum model run age (hours, 1–168)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not load SHMU data. Check your connection and try again.",
+      "no_forecast": "No valid forecast is currently available for the selected location and model. Try later or choose a different combination.",
+      "invalid_selection": "Select a listed location and model, and an integer maximum run age from 1 to 168 hours.",
+      "already_configured": "This location and model combination is already configured."
+    },
+    "abort": {
+      "cannot_connect": "Could not load the SHMU location catalog. Try again later.",
+      "already_configured": "This location and model combination is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "SHMU Forecast options",
+        "description": "Select a location and forecast model. Values are model forecasts, not observations. Changes are validated before saving. After saving, failures make the new selection unavailable; the previous model is not restored.",
+        "data": {
+          "station_id": "Forecast location",
+          "model": "Forecast model",
+          "max_run_age_hours": "Maximum model run age (hours, 1–168)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not load SHMU data. Check your connection and try again.",
+      "no_forecast": "No valid forecast is currently available for the selected location and model. Try later or choose a different combination.",
+      "invalid_selection": "Select a listed location and model, and an integer maximum run age from 1 to 168 hours.",
+      "already_configured": "This location and model combination is already configured."
+    },
+    "abort": {
+      "cannot_connect": "Could not load the SHMU location catalog. Try again later.",
+      "already_configured": "This location and model combination is already configured."
+    }
+  }
+}
